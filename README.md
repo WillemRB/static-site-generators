@@ -1,2 +1,2 @@
-# wyam-test
-Trying out Wyam
+# Wyam Test
+Trying out [Wyam](http://wyam.io/).
