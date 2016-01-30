@@ -1,4 +1,6 @@
-$wyam = 'Wyam.exe'
+Clear-Host
+
+$wyam = ''
 
 $config = Join-Path $PSScriptRoot 'Wyam/config.wyam'
 $input = Join-Path $PSScriptRoot 'Wyam/Input'
