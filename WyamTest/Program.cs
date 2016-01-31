@@ -12,13 +12,13 @@ namespace WyamTest
     /// <remarks>
     /// Remarks about Program
     /// </remarks>
-    class Program
+    public class Program
     {
         /// <summary>
         /// The summary of Main
         /// </summary>
         /// <param name="args">Arguments</param>
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
         }
     }
