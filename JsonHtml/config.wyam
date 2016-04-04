@@ -1,0 +1,3 @@
+Pipelines.Add("json",
+    ReadFiles("Input/data.json")
+);
