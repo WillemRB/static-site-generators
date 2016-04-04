@@ -1,3 +1,10 @@
-Pipelines.Add("json",
-    ReadFiles("Input/data.json")
+Pipelines.Add("Read JSON",
+    ReadFiles("data.json"),
+    Json("expando", true)
+);
+
+Pipelines.Add("Write Page",
+    ReadFiles("page.cshtml"),
+    Razor(),
+    WriteFiles(".html")
 );

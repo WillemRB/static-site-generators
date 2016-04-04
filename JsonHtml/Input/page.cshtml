@@ -1,9 +1,29 @@
+@model dynamic
+
 <html>
 	<head>
 		<title>Wyam JSON to Html</title>
 	</head>
 	<body>
-		<h1>Table</h1>
+		<h1>All Documents</h1>
+        @foreach(var document in Documents) {
+            <p>@document</p>
+        }
 
+        <h1>Metadata</h1>
+        @foreach(var document in Documents) {
+            <h2>@document["SourceFileName"]</h2>
+            @foreach(var meta in @document.Metadata) {
+                <p>@meta.Key - @meta.Value</p>
+            }
+        }
+
+        <h1>Data</h1>
+        @foreach(var document in Documents.Where(x => x["SourceFileExt"] == ".json")) {
+            @foreach(dynamic item in @document["expando"]) {
+                <p>-</p>
+            }
+        }
 	</body>
 </html>
+
