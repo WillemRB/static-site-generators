@@ -19,7 +19,7 @@
     <h1>Data</h1>
     @foreach(var document in Documents.Where(x => x["SourceFileExt"].ToString() == ".json")) {
         @foreach (var item in ((List<object>)@document["data"])) {
-            <p>@(item.name)</p>
+            <p>@(item["name"])</p>
         }
     }
 	</body>
