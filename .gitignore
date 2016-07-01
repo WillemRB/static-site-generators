@@ -23,3 +23,6 @@ bld/
 
 # User specified
 bin/*
+
+# Hugo
+Hugo/bookshelf/public/*
